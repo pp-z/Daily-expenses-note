@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Expenses of date</title>
+	<meta charset="utf-8">
+	<meta name="viewport" width="divicewidth, initial-scale=1">
+	<script src="js/jquery-1.12.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/calendarview.css">
+	 
+    <script src="js/prototype.js"></script>
+    <script src="js/calendarview.js"></script>
+	    <script>
+      function setupCalendars() {
+        // Embedded Calendar
+        Calendar.setup(
+          {
+            dateField: 'embeddedDateField',
+            parentElement: 'embeddedCalendar'
+          }
+        )
+
+       
+      }
+
+      Event.observe(window, 'load', function() { setupCalendars() })
+    </script>
+ 
+
+	</head>
+	<body>
+		<div class="container" align="center">
+		
+			<h1>Hello<h1>
+			
+			<div class="jumbotron">
+			<div>
+				<div>
+	<h2>Pick your Date</h2>
+				<div id="embeddedExample" align="center">
+				<div id="embeddedCalendar">
+				</div>
+				<br/>
+				<div id="embeddedDateField" class="dateField">
+				Select Date
+				</div>
+				</div>
+			</div>
+			</div>
+		</div>	
+		</div>
+
+	</body>
+</html>	
